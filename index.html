@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Screenshot To Text OCR</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="themeToggle">
+<button id="toggleTheme">🌙</button>
+</div>
+
+<div class="container">
+
+<h1>Screenshot To Text</h1>
+<p class="subtitle">Extract text from images instantly</p>
+
+<div id="dropArea" class="dropArea">
+
+<p>Drag & Drop Image</p>
+<p>or</p>
+
+<input type="file" id="imageInput" accept="image/*">
+
+</div>
+
+<img id="preview" class="preview">
+
+<div class="buttons">
+
+<button id="extractBtn">Extract Text</button>
+
+<button id="copyBtn">Copy</button>
+
+<button id="downloadBtn">Download</button>
+
+</div>
+
+<div id="loader" class="loader">
+Processing Image...
+</div>
+
+<textarea id="output" placeholder="Extracted text will appear here"></textarea>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
